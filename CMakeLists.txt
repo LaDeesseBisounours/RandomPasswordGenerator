@@ -3,6 +3,6 @@ project(RandomPasswordGenerator VERSION 1.0)
 
 add_executable(randpwgen )
 target_sources(randpwgen PRIVATE "src/main.cpp")
-target_compile_options(randpwgen PRIVATE -Wall -Wextra -Werror -g)
+target_compile_options(randpwgen PRIVATE -Wall -Wextra -Werror -O2)
 install(TARGETS randpwgen DESTINATION /usr/bin)
 
